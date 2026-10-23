@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\revstart\centering
+\caption{Matched-checkpoint comparison between the Edge and Local CPU contexts. Both configurations use the identical GGUF file, llama.cpp backend, prompts, item set, and greedy decoding; only the host hardware (and the Podman container on the laptop) differs. Diff.\ is Edge minus Local CPU accuracy with a 95\% Newcombe interval. Latency ratios are reported for the workloads re-measured in the current pipeline.}
+\label{tab:matched}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l c c c c@{}}
+\toprule
+\textbf{Bench.} & \textbf{Edge} & \textbf{CPU} & \textbf{Diff. [95\% CI]} & \textbf{Latency (s), ratio} \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Gemma 3 1B (Q8\_0)}} \\
+MMLU & 0.315 & 0.310 & $+0.005$ [$-0.12$, $+0.13$] & 1.6/1.1 (1.39$\times$) \\
+GSM8K & 0.477 & 0.471 & $+0.006$ [$-0.13$, $+0.14$] & 23.5/10.6 (2.22$\times$) \\
+HellaSwag & 0.291 & 0.290 & $+0.001$ [$-0.12$, $+0.13$] & -- \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Phi-4 Mini 3.8B (Q4\_K\_M)}} \\
+MMLU & 0.564 & 0.540 & $+0.024$ [$-0.11$, $+0.16$] & 6.6/4.4 (1.49$\times$) \\
+GSM8K & 0.639 & 0.640 & $-0.001$ [$-0.13$, $+0.13$] & 42.0/18.6 (2.26$\times$) \\
+HellaSwag & 0.489 & 0.510 & $-0.021$ [$-0.16$, $+0.12$] & -- \\
+\bottomrule
+\end{tabular*}
+\end{table}

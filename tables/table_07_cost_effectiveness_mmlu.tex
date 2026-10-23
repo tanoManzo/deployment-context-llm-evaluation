@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering
+\caption{Short-output cost-effectiveness on MMLU. Expected correct responses per second is benchmark accuracy [0, 1] multiplied by measured sample throughput under sequential inference.}
+\label{tab:cost-effectiveness}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}lLrrrr@{}}
+\toprule
+\textbf{Context} & \textbf{Model} & \textbf{Accuracy [0, 1]} & \textbf{Latency (s)} & \textbf{Samples/s} & \textbf{Expected correct responses/s} \\
+\midrule
+Edge & Llama 3.2 1B (Q4) & 0.395 & 1.776 & 0.361 & 0.143 \\
+Edge & Gemma 3 1B (Q8) & 0.315 & 1.566 & 0.391 & 0.123 \\
+Edge & SmolLM3 3B (Q4) & 0.520 & 5.666 & 0.150 & 0.078 \\
+Edge & Phi-4 Mini 3.8B (Q4) & 0.564 & 6.552 & 0.133 & 0.075 \\
+GPU server & Phi-4 14B (bf16) & 0.820 & 0.261 & 2.690 & 2.206 \\
+GPU server & Qwen 3 30B-A3B (bf16) & 0.816 & 0.265 & 2.660 & 2.171 \\
+GPU server & Llama 3.3 70B (FP8) & 0.802 & 0.296 & 2.469 & 1.980 \\
+GPU server & Ministral 3 8B (AWQ) & 0.660 & 0.244 & 2.827 & 1.866 \\
+GPU server & Ministral 3 14B & 0.700 & 0.274 & 2.597 & 1.818 \\
+GPU server & Ministral 3 3B (AWQ) & 0.640 & 0.242 & 2.839 & 1.817 \\
+GPU server & Phi-4 Mini 3.8B (bf16) & 0.630 & 0.251 & 2.770 & 1.745 \\
+GPU server & Qwen 2.5 1.5B (bf16) & 0.520 & 0.242 & 2.838 & 1.476 \\
+GPU server & Llama 3.2 1B (bf16) & 0.430 & 0.239 & 2.862 & 1.231 \\
+Local CPU & Gemma 3 1B (Q8) & 0.310 & 1.128 & 0.863 & 0.267 \\
+Local CPU & Llama 3.2 1B (Q8) & 0.380 & 1.821 & 0.538 & 0.205 \\
+Local CPU & Phi-4 Mini 3.8B (Q4) & 0.540 & 4.396 & 0.229 & 0.124 \\
+Local CPU & Ministral 3 3B (Q4) & 0.630 & 5.702 & 0.177 & 0.111 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

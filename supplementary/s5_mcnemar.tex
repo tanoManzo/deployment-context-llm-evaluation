@@ -1,0 +1,78 @@
+\begin{longtable}{@{}l l l l r r r c@{}}
+\caption{Paired sensitivity analysis: exact McNemar tests of the configuration with the highest observed accuracy against every other configuration in the same context and benchmark, on the identical 100 items (item correct if correct in at least half of its runs), Holm-adjusted within each cell. L/O: items answered correctly only by the leader / only by the other configuration.}\label{tab:s5}\\
+\toprule
+Context & Bench. & Leader & Compared configuration & L/O & $p$ & $p_{\mathrm{Holm}}$ & Resolved \\
+\midrule\endfirsthead
+\toprule
+Context & Bench. & Leader & Compared configuration & L/O & $p$ & $p_{\mathrm{Holm}}$ & Resolved \\
+\midrule\endhead
+\bottomrule\endfoot
+Edge & MMLU & Phi-4 Mini 3.8B (Q4) & Gemma 3 1B (Q8) & 34/8 & $<$0.001 & $<$0.001 & yes \\
+Edge & MMLU & Phi-4 Mini 3.8B (Q4) & Llama 3.2 1B (Q4) & 28/11 & 0.009 & 0.019 & yes \\
+Edge & MMLU & Phi-4 Mini 3.8B (Q4) & SmolLM3 3B (Q4) & 15/10 & 0.424 & 0.424 & no \\
+\midrule
+Edge & GSM8K & Phi-4 Mini 3.8B (Q4) & Gemma 3 1B (Q8) & 26/8 & 0.003 & 0.009 & yes \\
+Edge & GSM8K & Phi-4 Mini 3.8B (Q4) & Llama 3.2 1B (Q4) & 22/9 & 0.029 & 0.059 & no \\
+Edge & GSM8K & Phi-4 Mini 3.8B (Q4) & SmolLM3 3B (Q4) & 11/5 & 0.210 & 0.210 & no \\
+\midrule
+Edge & HellaSwag & Phi-4 Mini 3.8B (Q4) & Llama 3.2 1B (Q4) & 34/10 & $<$0.001 & 0.001 & yes \\
+Edge & HellaSwag & Phi-4 Mini 3.8B (Q4) & SmolLM3 3B (Q4) & 32/12 & 0.004 & 0.007 & yes \\
+Edge & HellaSwag & Phi-4 Mini 3.8B (Q4) & Gemma 3 1B (Q8) & 38/20 & 0.025 & 0.025 & yes \\
+\midrule
+Local CPU & MMLU & Ministral 3 3B (Q4) & Gemma 3 1B (Q8) & 41/4 & $<$0.001 & $<$0.001 & yes \\
+Local CPU & MMLU & Ministral 3 3B (Q4) & Llama 3.2 1B (Q8) & 38/8 & $<$0.001 & $<$0.001 & yes \\
+Local CPU & MMLU & Ministral 3 3B (Q4) & Phi-4 Mini 3.8B (Q4) & 20/6 & 0.009 & 0.009 & yes \\
+\midrule
+Local CPU & GSM8K & Phi-4 Mini 3.8B (Q4) & Llama 3.2 1B (Q8) & 51/1 & $<$0.001 & $<$0.001 & yes \\
+Local CPU & GSM8K & Phi-4 Mini 3.8B (Q4) & Gemma 3 1B (Q8) & 27/10 & 0.008 & 0.015 & yes \\
+Local CPU & GSM8K & Phi-4 Mini 3.8B (Q4) & Ministral 3 3B (Q4) & 18/6 & 0.023 & 0.023 & yes \\
+\midrule
+Local CPU & HellaSwag & Phi-4 Mini 3.8B (Q4) & Llama 3.2 1B (Q8) & 31/9 & $<$0.001 & 0.002 & yes \\
+Local CPU & HellaSwag & Phi-4 Mini 3.8B (Q4) & Gemma 3 1B (Q8) & 40/18 & 0.005 & 0.011 & yes \\
+Local CPU & HellaSwag & Phi-4 Mini 3.8B (Q4) & Ministral 3 3B (Q4) & 26/20 & 0.461 & 0.461 & no \\
+\midrule
+GPU server & MMLU & Phi-4 14B (bf16) & Llama 3.2 1B (bf16) & 42/3 & $<$0.001 & $<$0.001 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Kimi Linear 48B-A3B (bf16) & 40/3 & $<$0.001 & $<$0.001 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Qwen 2.5 1.5B (bf16) & 36/6 & $<$0.001 & $<$0.001 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Granite 4 H-Tiny (bf16) & 27/3 & $<$0.001 & $<$0.001 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Apertus 70B (bf16) & 26/5 & $<$0.001 & 0.002 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Phi-4 Mini 3.8B (GPTQ-4) & 28/6 & $<$0.001 & 0.002 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Phi-4 Mini 3.8B (bf16) & 23/4 & $<$0.001 & 0.002 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Qwen 2.5 7B (AWQ) & 18/3 & 0.001 & 0.010 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Ministral 3 3B (AWQ) & 25/7 & 0.002 & 0.013 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Ministral 3 8B (AWQ) & 21/5 & 0.002 & 0.013 & yes \\
+GPU server & MMLU & Phi-4 14B (bf16) & Ministral 3 14B & 20/8 & 0.036 & 0.143 & no \\
+GPU server & MMLU & Phi-4 14B (bf16) & Qwen 3 4B (AWQ) & 18/7 & 0.043 & 0.143 & no \\
+GPU server & MMLU & Phi-4 14B (bf16) & Llama 3.3 70B (FP8) & 11/10 & 1.000 & 1.000 & no \\
+GPU server & MMLU & Phi-4 14B (bf16) & Qwen 3 30B-A3B (bf16) & 8/8 & 1.000 & 1.000 & no \\
+\midrule
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Qwen 2.5 1.5B (bf16) & 41/4 & $<$0.001 & $<$0.001 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Llama 3.2 1B (bf16) & 36/4 & $<$0.001 & $<$0.001 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Phi-4 14B (bf16) & 21/0 & $<$0.001 & $<$0.001 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Ministral 3 8B (AWQ) & 27/2 & $<$0.001 & $<$0.001 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Ministral 3 3B (AWQ) & 29/4 & $<$0.001 & $<$0.001 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Qwen 3 4B (AWQ) & 25/3 & $<$0.001 & $<$0.001 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Qwen 2.5 7B (AWQ) & 26/5 & $<$0.001 & 0.002 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Qwen 3 30B-A3B (bf16) & 19/2 & $<$0.001 & 0.002 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Phi-4 Mini 3.8B (GPTQ-4) & 17/2 & $<$0.001 & 0.004 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Apertus 70B (bf16) & 18/3 & 0.001 & 0.007 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Ministral 3 14B & 23/6 & 0.002 & 0.009 & yes \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Phi-4 Mini 3.8B (bf16) & 13/4 & 0.049 & 0.147 & no \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Granite 4 H-Tiny (bf16) & 14/7 & 0.189 & 0.378 & no \\
+GPU server & GSM8K & Llama 3.3 70B (FP8) & Kimi Linear 48B-A3B (bf16) & 12/7 & 0.359 & 0.378 & no \\
+\midrule
+GPU server & HellaSwag & Phi-4 14B (bf16) & Qwen 2.5 1.5B (bf16) & 62/2 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Llama 3.2 1B (bf16) & 67/5 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Kimi Linear 48B-A3B (bf16) & 66/5 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Apertus 70B (bf16) & 50/6 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Ministral 3 3B (AWQ) & 44/5 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Phi-4 Mini 3.8B (bf16) & 37/5 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Phi-4 Mini 3.8B (GPTQ-4) & 34/4 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Qwen 2.5 7B (AWQ) & 30/4 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Ministral 3 14B & 34/6 & $<$0.001 & $<$0.001 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Granite 4 H-Tiny (bf16) & 27/6 & $<$0.001 & 0.002 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Ministral 3 8B (AWQ) & 27/6 & $<$0.001 & 0.002 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Qwen 3 4B (AWQ) & 22/6 & 0.004 & 0.011 & yes \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Qwen 3 30B-A3B (bf16) & 12/6 & 0.238 & 0.476 & no \\
+GPU server & HellaSwag & Phi-4 14B (bf16) & Llama 3.3 70B (FP8) & 8/7 & 1.000 & 1.000 & no \\
+\end{longtable}

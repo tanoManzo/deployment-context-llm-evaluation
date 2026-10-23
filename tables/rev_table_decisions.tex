@@ -1,0 +1,22 @@
+\begin{table*}[!t]
+\revstart\centering
+\caption{Worked deployment decisions on GSM8K-type requests (multi-step arithmetic word problems, one sequential request stream). Thresholds are illustrative and are not taken from a documented application. Step~1 removes configurations that violate a hard constraint; Step~2 retains the uncertainty-aware Pareto set of the feasible configurations; Step~3 applies the tie-aware rule of Algorithm~\ref{alg:selection}. The point-estimate choice (highest observed accuracy) is shown for comparison.}
+\label{tab:decisions}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}P{0.9cm} P{3.0cm} L L P{2.3cm} P{2.3cm}@{}}
+\toprule
+\textbf{ID} & \textbf{Requirements} & \textbf{Step 1: excluded (violated limit)} & \textbf{Step 2: feasible uncertainty-aware Pareto set} & \textbf{Step 3: tie-aware choice} & \textbf{Point-estimate choice} \\
+\midrule
+E1 & Edge, on-device math helper: RAM $\le$ 6.0\,GiB; latency $\le$ 30\,s; accuracy $\ge$ 0.45 & \emph{memory:} Phi-4 Mini 3.8B (Q4) (7.0\,GiB); \emph{latency:} SmolLM3 3B (Q4) (39.7\,s) & Llama 3.2 1B (Q4) (0.520; 16.0\,s; 2.4\,GiB) & \textbf{Llama 3.2 1B (Q4)} & Llama 3.2 1B (Q4) \\
+E2 & Edge, offline batch grading: RAM $\le$ 7.5\,GiB; latency $\le$ 45\,s; accuracy $\ge$ 0.45 & none & Phi-4 Mini 3.8B (Q4) (0.639; 42.0\,s; 7.0\,GiB); SmolLM3 3B (Q4) (0.577; 39.7\,s; 5.5\,GiB); Llama 3.2 1B (Q4) (0.520; 16.0\,s; 2.4\,GiB) & \textbf{Llama 3.2 1B (Q4)} & Phi-4 Mini 3.8B (Q4) \\
+\midrule
+C1 & Local CPU, desktop assistant: RAM $\le$ 16.0\,GiB; latency $\le$ 20\,s; accuracy $\ge$ 0.50 & \emph{latency:} Ministral 3 3B (Q4) (23.1\,s); \emph{accuracy:} Gemma 3 1B (Q8) (0.471), Llama 3.2 1B (Q8) (0.140) & Phi-4 Mini 3.8B (Q4) (0.640; 18.6\,s; 13.5\,GiB) & \textbf{Phi-4 Mini 3.8B (Q4)} & Phi-4 Mini 3.8B (Q4) \\
+C2 & Local CPU, tight-latency assistant: RAM $\le$ 16.0\,GiB; latency $\le$ 12\,s; accuracy $\ge$ 0.45 & \emph{latency:} Ministral 3 3B (Q4) (23.1\,s), Phi-4 Mini 3.8B (Q4) (18.6\,s); \emph{accuracy:} Llama 3.2 1B (Q8) (0.140) & Gemma 3 1B (Q8) (0.471; 10.6\,s; 12.7\,GiB) & \textbf{Gemma 3 1B (Q8)} & Gemma 3 1B (Q8) \\
+\midrule
+G1 & GPU server, single-user analyst assistant: fits server memory; latency $\le$ 5\,s; accuracy $\ge$ 0.60 & \emph{latency:} Apertus 70B (bf16) (11.0\,s), Granite 4 H-Tiny (bf16) (7.3\,s), Kimi Linear 48B-A3B (bf16) (5.9\,s), Llama 3.3 70B (FP8) (7.1\,s), Ministral 3 14B (11.5\,s), Qwen 3 30B-A3B (bf16) (6.9\,s); \emph{accuracy:} Llama 3.2 1B (bf16) (0.435), Ministral 3 3B (AWQ) (0.510), Ministral 3 8B (AWQ) (0.510), Phi-4 14B (bf16) (0.550), Qwen 2.5 1.5B (bf16) (0.390), Qwen 2.5 7B (AWQ) (0.550), Qwen 3 4B (AWQ) (0.540) & Phi-4 Mini 3.8B (bf16) (0.670; 2.9\,s; 635\,J); Phi-4 Mini 3.8B (GPTQ-4) (0.610; 3.0\,s; 523\,J) & \textbf{Phi-4 Mini 3.8B (GPTQ-4)} & Phi-4 Mini 3.8B (bf16) \\
+G2 & GPU server, accuracy-oriented single-user assistant: fits server memory; latency $\le$ 8\,s; accuracy $\ge$ 0.60 & \emph{latency:} Apertus 70B (bf16) (11.0\,s), Ministral 3 14B (11.5\,s); \emph{accuracy:} Llama 3.2 1B (bf16) (0.435), Ministral 3 3B (AWQ) (0.510), Ministral 3 8B (AWQ) (0.510), Phi-4 14B (bf16) (0.550), Qwen 2.5 1.5B (bf16) (0.390), Qwen 2.5 7B (AWQ) (0.550), Qwen 3 30B-A3B (bf16) (0.590), Qwen 3 4B (AWQ) (0.540) & Llama 3.3 70B (FP8) (0.745; 7.1\,s; 2875\,J); Kimi Linear 48B-A3B (bf16) (0.710; 5.9\,s; 1202\,J); Phi-4 Mini 3.8B (bf16) (0.670; 2.9\,s; 635\,J); Phi-4 Mini 3.8B (GPTQ-4) (0.610; 3.0\,s; 523\,J) & \textbf{Phi-4 Mini 3.8B (GPTQ-4)} & Llama 3.3 70B (FP8) \\
+\bottomrule
+\end{tabularx}
+\end{table*}

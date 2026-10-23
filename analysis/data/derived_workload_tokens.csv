@@ -1,0 +1,100 @@
+context,dataset,source,est_generated_tokens
+Local CPU,dolly,thesis,93.5068667285352
+Local CPU,dolly,thesis,118.29725726167666
+Local CPU,dolly,thesis,113.47817126591679
+Local CPU,dolly,thesis,101.61910918274462
+Local CPU,gsm8k,thesis,28.510034631396014
+Local CPU,gsm8k,thesis,116.97543541715991
+Local CPU,gsm8k,thesis,120.24080169500573
+Local CPU,gsm8k,thesis,143.53703104618413
+Local CPU,hellaswag,thesis,1.0115565965261348
+Local CPU,hellaswag,thesis,1.0081013929701204
+Local CPU,hellaswag,thesis,2.9031479205225477
+Local CPU,hellaswag,thesis,1.0586384038308514
+Local CPU,mmlu,thesis,1.027138977713592
+Local CPU,mmlu,thesis,1.0090527110588419
+Local CPU,mmlu,thesis,2.6717515787053476
+Local CPU,mmlu,thesis,1.0856572037475152
+Edge,dolly,thesis,106.03298003994355
+Edge,dolly,thesis,125.5208113567056
+Edge,dolly,thesis,102.0142351017256
+Edge,dolly,thesis,94.96811647198399
+Edge,gsm8k,thesis,122.11449101417817
+Edge,gsm8k,thesis,139.12910027082327
+Edge,gsm8k,thesis,143.87757155626355
+Edge,hellaswag,thesis,2.8174263260078267
+Edge,hellaswag,thesis,3.081513222556483
+Edge,hellaswag,thesis,1.0093006126022568
+Edge,hellaswag,thesis,1.052810854833271
+Edge,mmlu,thesis,2.676348879855697
+Edge,mmlu,thesis,2.8547483223826746
+Edge,mmlu,thesis,1.0170052220554022
+Edge,mmlu,thesis,1.05497587973979
+GPU server,dolly,thesis,133.03231137045685
+GPU server,dolly,thesis,111.94772094791895
+GPU server,dolly,thesis,89.44876029309431
+GPU server,dolly,thesis,115.82702849168139
+GPU server,dolly,thesis,112.75639734074018
+GPU server,dolly,thesis,115.94979238842923
+GPU server,dolly,thesis,119.44151766448826
+GPU server,dolly,thesis,119.3556020294248
+GPU server,dolly,thesis,130.07946154779856
+GPU server,dolly,thesis,106.24211072260793
+GPU server,dolly,thesis,100.2156937862357
+GPU server,dolly,thesis,101.90029290163294
+GPU server,dolly,thesis,124.75257935087167
+GPU server,dolly,thesis,117.29945025567325
+GPU server,dolly,thesis,129.42753978153993
+GPU server,gsm8k,thesis,129.6113173483108
+GPU server,gsm8k,thesis,106.6700138285602
+GPU server,gsm8k,thesis,87.69350010554942
+GPU server,gsm8k,thesis,113.06766726441458
+GPU server,gsm8k,thesis,144.3210463962452
+GPU server,gsm8k,thesis,121.90201783132076
+GPU server,gsm8k,thesis,124.86765411288734
+GPU server,gsm8k,thesis,126.55821208311035
+GPU server,gsm8k,thesis,135.88643080968558
+GPU server,gsm8k,thesis,119.57587738404644
+GPU server,gsm8k,thesis,117.60531823951719
+GPU server,gsm8k,thesis,144.2126921356625
+GPU server,gsm8k,thesis,138.19130416280643
+GPU server,gsm8k,thesis,112.56520861335055
+GPU server,gsm8k,thesis,130.9191899071351
+GPU server,hellaswag,thesis,1.0005512627828144
+GPU server,hellaswag,thesis,1.090768499852008
+GPU server,hellaswag,thesis,1.6891082668340354
+GPU server,hellaswag,thesis,1.001725562589497
+GPU server,hellaswag,thesis,1.0014978360175004
+GPU server,hellaswag,thesis,1.0011341199527206
+GPU server,hellaswag,thesis,1.0015947594952577
+GPU server,hellaswag,thesis,1.0016901916028462
+GPU server,hellaswag,thesis,1.1201385251041964
+GPU server,hellaswag,thesis,3.565158322681686
+GPU server,hellaswag,thesis,3.4730372296337633
+GPU server,hellaswag,thesis,1.0013127776048167
+GPU server,hellaswag,thesis,1.0018213678446686
+GPU server,hellaswag,thesis,1.001432684468205
+GPU server,hellaswag,thesis,1.0016811232803815
+GPU server,mmlu,thesis,1.0219463489610627
+GPU server,mmlu,thesis,1.071095867820213
+GPU server,mmlu,thesis,1.9263065184865602
+GPU server,mmlu,thesis,1.0015690010146374
+GPU server,mmlu,thesis,1.0015050270917232
+GPU server,mmlu,thesis,1.0012377367402705
+GPU server,mmlu,thesis,1.001895050925654
+GPU server,mmlu,thesis,1.0017349902428028
+GPU server,mmlu,thesis,1.3000522522106988
+GPU server,mmlu,thesis,2.7004962660739626
+GPU server,mmlu,thesis,2.3305981015494646
+GPU server,mmlu,thesis,1.0212845976568805
+GPU server,mmlu,thesis,1.001902086847274
+GPU server,mmlu,thesis,1.001844788057197
+GPU server,mmlu,thesis,1.1416046583446653
+Edge,gsm8k,tables,143.94643149700002
+Edge,mmlu,tables,1.0576220090000001
+Edge,gsm8k,tables,121.65062719199999
+Edge,mmlu,tables,2.6749817999999985
+Local CPU,mmlu,tables,1.0580532550000006
+Local CPU,mmlu,tables,1.0101914800000018
+Local CPU,gsm8k,tables,120.64887024000001
+Local CPU,mmlu,tables,2.748296319999998

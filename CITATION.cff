@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article."
+title: "Deployment-context-aware evaluation of small and large language models: analysis code and data"
+authors:
+  - family-names: "Nascimento Santos"
+    given-names: "Stephane"
+  - family-names: "Manzo"
+    given-names: "Gaetano"
+  - family-names: "Delgado"
+    given-names: "Pamela"
+preferred-citation:
+  type: article
+  title: "Beyond Leaderboards: Deployment-Context-Aware Evaluation of Small and Large Language Models"
+  authors:
+    - family-names: "Nascimento Santos"
+      given-names: "Stephane"
+    - family-names: "Manzo"
+      given-names: "Gaetano"
+    - family-names: "Delgado"
+      given-names: "Pamela"
+  journal: "IEEE Access"
+  year: 2026

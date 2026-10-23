@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Deployment contexts used to organize the evaluation.}
+\label{tab:deployment-contexts}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}lLLLLLL@{}}
+\toprule
+\textbf{Context} & \textbf{Hardware envelope} & \textbf{Backend} & \textbf{Model scale} & \textbf{Operational objective} & \textbf{Workload profile} & \textbf{Binding constraint} \\
+\midrule
+Edge & Raspberry Pi 5; 4 cores; 8 GB RAM; no GPU & llama.cpp & up to $\approx$4B, quantized & feasibility first, then accuracy & short interactive requests & RAM, then thermal/latency \\
+Local CPU & Laptop CPU; 12 threads; 30 GB RAM; no discrete GPU & llama.cpp (Podman) & $\approx$1B--4B, quantized in current pool & responsiveness under memory budget & short-to-mid generation & latency \\
+GPU server & 2$\times$ RTX PRO 6000 Blackwell; $\approx$96 GiB VRAM each & vLLM & up to $\approx$70B; bf16/fp8/AWQ/GPTQ & accuracy and throughput & mixed, including long generation & accuracy--latency/throughput trade-off \\
+\bottomrule
+\end{tabularx}
+\end{table*}

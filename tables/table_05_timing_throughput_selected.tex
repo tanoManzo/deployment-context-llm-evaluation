@@ -1,0 +1,33 @@
+\begin{table*}[t]
+\centering
+\caption{Mean time to first token, end-to-end latency, and context-specific token throughput for representative configurations. Edge and Local CPU report active-generation tokens per second; the GPU server reports run-level sustained tokens per second.}
+\label{tab:timing-throughput}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}lLLrrrL@{}}
+\toprule
+\textbf{Context} & \textbf{Model} & \textbf{Dataset} & \textbf{TTFT (ms)} & \textbf{Latency (ms)} & \textbf{Reported throughput (tokens/s)} & \textbf{Throughput basis} \\
+\midrule
+GPU server & Apertus 70B (bf16) & Dolly & 213.314 & 10525.296 & 12.856 & Run-level sustained \\
+GPU server & Llama 3.2 1B (bf16) & Dolly & 128.873 & 1119.799 & 98.172 & Run-level sustained \\
+GPU server & Llama 3.3 70B (FP8) & Dolly & 182.222 & 6287.666 & 18.061 & Run-level sustained \\
+GPU server & Ministral 3 14B & Dolly & 164.500 & 9962.044 & 11.543 & Run-level sustained \\
+GPU server & Ministral 3 3B (AWQ) & Dolly & 132.160 & 2529.811 & 45.628 & Run-level sustained \\
+GPU server & Ministral 3 8B (AWQ) & Dolly & 135.219 & 3201.725 & 36.326 & Run-level sustained \\
+GPU server & Phi-4 14B (bf16) & Dolly & 144.274 & 2478.374 & 51.247 & Run-level sustained \\
+GPU server & Phi-4 Mini 3.8B (bf16) & Dolly & 140.130 & 2544.977 & 41.577 & Run-level sustained \\
+GPU server & Qwen 2.5 1.5B (bf16) & Dolly & 132.091 & 1604.326 & 62.883 & Run-level sustained \\
+GPU server & Qwen 3 30B-A3B (bf16) & Dolly & 155.056 & 6103.135 & 19.317 & Run-level sustained \\
+Local CPU & Phi-4 Mini 3.8B (Q4) & GSM8K & 2412.322 & 18628.568 & 7.440 & Active generation \\
+Edge & Phi-4 Mini 3.8B (Q4) & GSM8K & 2873.336 & 42039.668 & 3.106 & Active generation \\
+Edge & Llama 3.2 1B (Q4) & GSM8K & 849.708 & 16013.137 & 9.493 & Active generation \\
+GPU server & Llama 3.2 1B (bf16) & GSM8K & 128.715 & 1097.979 & 93.236 & Run-level sustained \\
+Local CPU & Ministral 3 3B (Q4) & MMLU & 5580.990 & 5702.325 & 8.348 & Active generation \\
+Local CPU & Phi-4 Mini 3.8B (Q4) & MMLU & 4079.376 & 4396.023 & 8.680 & Active generation \\
+Local CPU & Gemma 3 1B (Q8) & MMLU & 1048.165 & 1128.218 & 13.253 & Active generation \\
+Edge & Phi-4 Mini 3.8B (Q4) & MMLU & 5798.484 & 6552.354 & 3.550 & Active generation \\
+Edge & Llama 3.2 1B (Q4) & MMLU & 1692.703 & 1775.791 & 12.697 & Active generation \\
+\bottomrule
+\end{tabularx}
+\end{table*}

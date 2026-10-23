@@ -1,0 +1,81 @@
+\begin{longtable}{@{}l l l r r r r@{}}
+\caption{Run-to-run spread of accuracy. Accuracy is the session-weighted mean; the spread is computed over all measured runs. Because the same 100 items are used in every run with greedy decoding, the spread reflects execution non-determinism, not item sampling; item-level uncertainty is given by the Wilson intervals in the article.}\label{tab:s4}\\
+\toprule
+Context & Configuration & Workload & Accuracy & Min & Max & SD \\
+\midrule\endfirsthead
+\toprule
+Context & Configuration & Workload & Accuracy & Min & Max & SD \\
+\midrule\endhead
+\bottomrule\endfoot
+Edge & Gemma 3 1B (Q8) & MMLU & 0.315 & 0.30 & 0.34 & 0.013 \\
+Edge & Gemma 3 1B (Q8) & GSM8K & 0.477 & 0.45 & 0.51 & 0.022 \\
+Edge & Gemma 3 1B (Q8) & HellaSwag & 0.291 & 0.28 & 0.31 & 0.012 \\
+Edge & Llama 3.2 1B (Q4) & MMLU & 0.395 & 0.38 & 0.41 & 0.011 \\
+Edge & Llama 3.2 1B (Q4) & GSM8K & 0.520 & 0.49 & 0.55 & 0.017 \\
+Edge & Llama 3.2 1B (Q4) & HellaSwag & 0.251 & 0.23 & 0.26 & 0.010 \\
+Edge & Phi-4 Mini 3.8B (Q4) & MMLU & 0.564 & 0.54 & 0.58 & 0.012 \\
+Edge & Phi-4 Mini 3.8B (Q4) & GSM8K & 0.639 & 0.60 & 0.66 & 0.018 \\
+Edge & Phi-4 Mini 3.8B (Q4) & HellaSwag & 0.489 & 0.48 & 0.50 & 0.009 \\
+Edge & SmolLM3 3B (Q4) & MMLU & 0.520 & 0.51 & 0.53 & 0.005 \\
+Edge & SmolLM3 3B (Q4) & GSM8K & 0.577 & 0.56 & 0.62 & 0.018 \\
+Edge & SmolLM3 3B (Q4) & HellaSwag & 0.290 & 0.28 & 0.30 & 0.008 \\
+\midrule
+Local CPU & Gemma 3 1B (Q8) & MMLU & 0.310 & 0.31 & 0.31 & 0.000 \\
+Local CPU & Gemma 3 1B (Q8) & GSM8K & 0.471 & 0.44 & 0.50 & 0.019 \\
+Local CPU & Gemma 3 1B (Q8) & HellaSwag & 0.290 & 0.29 & 0.29 & 0.000 \\
+Local CPU & Llama 3.2 1B (Q8) & MMLU & 0.380 & 0.38 & 0.38 & 0.000 \\
+Local CPU & Llama 3.2 1B (Q8) & GSM8K & 0.140 & 0.14 & 0.14 & 0.000 \\
+Local CPU & Llama 3.2 1B (Q8) & HellaSwag & 0.290 & 0.29 & 0.29 & 0.000 \\
+Local CPU & Ministral 3 3B (Q4) & MMLU & 0.630 & 0.62 & 0.64 & 0.010 \\
+Local CPU & Ministral 3 3B (Q4) & GSM8K & 0.549 & 0.51 & 0.58 & 0.019 \\
+Local CPU & Ministral 3 3B (Q4) & HellaSwag & 0.405 & 0.39 & 0.42 & 0.015 \\
+Local CPU & Phi-4 Mini 3.8B (Q4) & MMLU & 0.540 & 0.54 & 0.54 & 0.000 \\
+Local CPU & Phi-4 Mini 3.8B (Q4) & GSM8K & 0.640 & 0.64 & 0.64 & 0.000 \\
+Local CPU & Phi-4 Mini 3.8B (Q4) & HellaSwag & 0.510 & 0.50 & 0.52 & 0.005 \\
+\midrule
+GPU server & Apertus 70B (bf16) & MMLU & 0.610 & 0.61 & 0.61 & 0.000 \\
+GPU server & Apertus 70B (bf16) & GSM8K & 0.601 & 0.55 & 0.61 & 0.020 \\
+GPU server & Apertus 70B (bf16) & HellaSwag & 0.410 & 0.41 & 0.41 & 0.000 \\
+GPU server & Granite 4 H-Tiny (bf16) & MMLU & 0.580 & 0.58 & 0.58 & 0.000 \\
+GPU server & Granite 4 H-Tiny (bf16) & GSM8K & 0.690 & 0.69 & 0.69 & 0.000 \\
+GPU server & Granite 4 H-Tiny (bf16) & HellaSwag & 0.640 & 0.64 & 0.64 & 0.000 \\
+GPU server & Kimi Linear 48B-A3B (bf16) & MMLU & 0.450 & 0.45 & 0.45 & 0.000 \\
+GPU server & Kimi Linear 48B-A3B (bf16) & GSM8K & 0.710 & 0.71 & 0.71 & 0.000 \\
+GPU server & Kimi Linear 48B-A3B (bf16) & HellaSwag & 0.240 & 0.24 & 0.24 & 0.000 \\
+GPU server & Llama 3.2 1B (bf16) & MMLU & 0.430 & 0.43 & 0.43 & 0.000 \\
+GPU server & Llama 3.2 1B (bf16) & GSM8K & 0.435 & 0.43 & 0.44 & 0.005 \\
+GPU server & Llama 3.2 1B (bf16) & HellaSwag & 0.230 & 0.23 & 0.23 & 0.000 \\
+GPU server & Llama 3.3 70B (FP8) & MMLU & 0.802 & 0.80 & 0.81 & 0.004 \\
+GPU server & Llama 3.3 70B (FP8) & GSM8K & 0.745 & 0.74 & 0.75 & 0.005 \\
+GPU server & Llama 3.3 70B (FP8) & HellaSwag & 0.835 & 0.83 & 0.84 & 0.005 \\
+GPU server & Ministral 3 14B & MMLU & 0.700 & 0.70 & 0.70 & 0.000 \\
+GPU server & Ministral 3 14B & GSM8K & 0.590 & 0.59 & 0.59 & 0.000 \\
+GPU server & Ministral 3 14B & HellaSwag & 0.570 & 0.57 & 0.57 & 0.000 \\
+GPU server & Ministral 3 3B (AWQ) & MMLU & 0.640 & 0.64 & 0.64 & 0.000 \\
+GPU server & Ministral 3 3B (AWQ) & GSM8K & 0.510 & 0.51 & 0.51 & 0.000 \\
+GPU server & Ministral 3 3B (AWQ) & HellaSwag & 0.460 & 0.46 & 0.46 & 0.000 \\
+GPU server & Ministral 3 8B (AWQ) & MMLU & 0.660 & 0.66 & 0.66 & 0.000 \\
+GPU server & Ministral 3 8B (AWQ) & GSM8K & 0.510 & 0.51 & 0.51 & 0.000 \\
+GPU server & Ministral 3 8B (AWQ) & HellaSwag & 0.640 & 0.64 & 0.64 & 0.000 \\
+GPU server & Phi-4 14B (bf16) & MMLU & 0.820 & 0.82 & 0.82 & 0.000 \\
+GPU server & Phi-4 14B (bf16) & GSM8K & 0.550 & 0.55 & 0.55 & 0.000 \\
+GPU server & Phi-4 14B (bf16) & HellaSwag & 0.850 & 0.85 & 0.85 & 0.000 \\
+GPU server & Phi-4 Mini 3.8B (GPTQ-4) & MMLU & 0.600 & 0.60 & 0.60 & 0.000 \\
+GPU server & Phi-4 Mini 3.8B (GPTQ-4) & GSM8K & 0.610 & 0.61 & 0.61 & 0.000 \\
+GPU server & Phi-4 Mini 3.8B (GPTQ-4) & HellaSwag & 0.550 & 0.55 & 0.55 & 0.000 \\
+GPU server & Phi-4 Mini 3.8B (bf16) & MMLU & 0.630 & 0.63 & 0.63 & 0.000 \\
+GPU server & Phi-4 Mini 3.8B (bf16) & GSM8K & 0.670 & 0.67 & 0.67 & 0.000 \\
+GPU server & Phi-4 Mini 3.8B (bf16) & HellaSwag & 0.530 & 0.53 & 0.53 & 0.000 \\
+GPU server & Qwen 2.5 1.5B (bf16) & MMLU & 0.520 & 0.52 & 0.52 & 0.000 \\
+GPU server & Qwen 2.5 1.5B (bf16) & GSM8K & 0.390 & 0.39 & 0.39 & 0.000 \\
+GPU server & Qwen 2.5 1.5B (bf16) & HellaSwag & 0.250 & 0.25 & 0.25 & 0.000 \\
+GPU server & Qwen 2.5 7B (AWQ) & MMLU & 0.670 & 0.67 & 0.67 & 0.000 \\
+GPU server & Qwen 2.5 7B (AWQ) & GSM8K & 0.550 & 0.55 & 0.55 & 0.000 \\
+GPU server & Qwen 2.5 7B (AWQ) & HellaSwag & 0.590 & 0.59 & 0.59 & 0.000 \\
+GPU server & Qwen 3 30B-A3B (bf16) & MMLU & 0.816 & 0.81 & 0.82 & 0.005 \\
+GPU server & Qwen 3 30B-A3B (bf16) & GSM8K & 0.590 & 0.59 & 0.59 & 0.000 \\
+GPU server & Qwen 3 30B-A3B (bf16) & HellaSwag & 0.790 & 0.79 & 0.79 & 0.000 \\
+GPU server & Qwen 3 4B (AWQ) & MMLU & 0.710 & 0.71 & 0.71 & 0.000 \\
+GPU server & Qwen 3 4B (AWQ) & GSM8K & 0.540 & 0.54 & 0.54 & 0.000 \\
+GPU server & Qwen 3 4B (AWQ) & HellaSwag & 0.690 & 0.69 & 0.69 & 0.000 \\
+\end{longtable}

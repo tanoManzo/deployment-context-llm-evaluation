@@ -1,0 +1,21 @@
+\begin{table}[!t]
+\revstart\centering
+\caption{Raspberry Pi~5: active-generation rate (generated words per second of the decoding interval) versus measured end-to-end request rate, which includes the inter-request cooling pause of 1\,s (MMLU) or 2\,s (GSM8K). Request rates are run-level means; their 95\% intervals are within $\pm$1\% (Supplementary Table~S2). Pause is the fraction of wall-clock time spent in the pause.}
+\label{tab:pi-rates}
+\footnotesize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabularx}{\columnwidth}{@{}L l r r r r@{}}
+\toprule
+\textbf{Config.} & \textbf{Bench.} & \textbf{Tok/s} & \textbf{Lat. (s)} & \textbf{Req/h} & \textbf{Pause} \\
+\midrule
+Gemma 3 1B (Q8) & MMLU & 5.41 & 1.6 & 1407 & 39\% \\
+ & GSM8K & 6.11 & 23.5 & 141 & 8\% \\
+Llama 3.2 1B (Q4) & MMLU & 12.70 & 1.8 & 1300 & 36\% \\
+ & GSM8K & 9.49 & 16.0 & 200 & 11\% \\
+Phi-4 Mini 3.8B (Q4) & MMLU & 3.55 & 6.6 & 477 & 13\% \\
+ & GSM8K & 3.11 & 42.0 & 82 & 5\% \\
+SmolLM3 3B (Q4) & MMLU & 4.64 & 5.7 & 541 & 15\% \\
+ & GSM8K & 4.03 & 39.7 & 86 & 5\% \\
+\bottomrule
+\end{tabularx}
+\end{table}

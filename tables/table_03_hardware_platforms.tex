@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Hardware platforms used for evaluation.}
+\label{tab:hardware-platforms}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}lLLLLLL@{}}
+\toprule
+\textbf{Platform} & \textbf{CPU} & \textbf{RAM} & \textbf{GPU} & \textbf{VRAM} & \textbf{OS} & \textbf{Backend} \\
+\midrule
+Raspberry Pi 5 & Cortex-A76, 4 cores & 7.9 GiB & none & --- & Debian 13 (trixie) & llama.cpp \\
+Laptop CPU & Intel i5-1345U, 10c/12t & 30 GiB & integrated Intel & --- & OpenSUSE Tumbleweed & llama.cpp (Podman) \\
+GPU server & 2$\times$ Xeon 6520P, 96 threads & 251 GiB & 2$\times$ RTX PRO 6000 Blackwell & 97,887 MiB per GPU & Ubuntu 24.04.3 LTS & vLLM 0.20.0 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

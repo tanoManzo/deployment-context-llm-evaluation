@@ -1,0 +1,162 @@
+figure,context,model,metric,value
+figure_06,Edge,,gsm8k_latency_s,16.011
+figure_06,Edge,,gsm8k_accuracy,0.519
+figure_06,Edge,,gsm8k_latency_s,23.522
+figure_06,Edge,,gsm8k_accuracy,0.477
+figure_06,Edge,,gsm8k_latency_s,39.709
+figure_06,Edge,,gsm8k_accuracy,0.577
+figure_06,Edge,,gsm8k_latency_s,42.038
+figure_06,Edge,,gsm8k_accuracy,0.639
+figure_06,GPU server,,gsm8k_latency_s,1.097
+figure_06,GPU server,,gsm8k_accuracy,0.435
+figure_06,GPU server,,gsm8k_latency_s,2.454
+figure_06,GPU server,,gsm8k_accuracy,0.390
+figure_06,GPU server,,gsm8k_latency_s,2.464
+figure_06,GPU server,,gsm8k_accuracy,0.550
+figure_06,GPU server,,gsm8k_latency_s,2.860
+figure_06,GPU server,,gsm8k_accuracy,0.550
+figure_06,GPU server,,gsm8k_latency_s,2.916
+figure_06,GPU server,,gsm8k_accuracy,0.510
+figure_06,GPU server,,gsm8k_latency_s,2.917
+figure_06,GPU server,,gsm8k_accuracy,0.670
+figure_06,GPU server,,gsm8k_latency_s,2.995
+figure_06,GPU server,,gsm8k_accuracy,0.610
+figure_06,GPU server,,gsm8k_latency_s,3.152
+figure_06,GPU server,,gsm8k_accuracy,0.540
+figure_06,GPU server,,gsm8k_latency_s,3.536
+figure_06,GPU server,,gsm8k_accuracy,0.510
+figure_06,GPU server,,gsm8k_latency_s,5.874
+figure_06,GPU server,,gsm8k_accuracy,0.710
+figure_06,GPU server,,gsm8k_latency_s,6.934
+figure_06,GPU server,,gsm8k_accuracy,0.590
+figure_06,GPU server,,gsm8k_latency_s,7.057
+figure_06,GPU server,,gsm8k_accuracy,0.745
+figure_06,GPU server,,gsm8k_latency_s,7.332
+figure_06,GPU server,,gsm8k_accuracy,0.690
+figure_06,GPU server,,gsm8k_latency_s,10.968
+figure_06,GPU server,,gsm8k_accuracy,0.601
+figure_06,GPU server,,gsm8k_latency_s,11.526
+figure_06,GPU server,,gsm8k_accuracy,0.590
+figure_06,Local CPU,,gsm8k_latency_s,3.220
+figure_06,Local CPU,,gsm8k_accuracy,0.140
+figure_06,Local CPU,,gsm8k_latency_s,10.606
+figure_06,Local CPU,,gsm8k_accuracy,0.471
+figure_06,Local CPU,,gsm8k_latency_s,18.627
+figure_06,Local CPU,,gsm8k_accuracy,0.640
+figure_06,Local CPU,,gsm8k_latency_s,23.058
+figure_06,Local CPU,,gsm8k_accuracy,0.549
+figure_07,Edge,Gemma 3 1B (Q8),peak_ram_gib,2.571
+figure_07,Edge,Llama 3.2 1B (Q4),peak_ram_gib,2.449
+figure_07,Edge,Phi-4 Mini 3.8B (Q4),peak_ram_gib,7.034
+figure_07,Edge,SmolLM3 3B (Q4),peak_ram_gib,5.542
+figure_07,Local CPU,Gemma 3 1B (Q8),peak_ram_gib,12.739
+figure_07,Local CPU,Llama 3.2 1B (Q8),peak_ram_gib,5.131
+figure_07,Local CPU,Ministral 3 3B (Q4),peak_ram_gib,12.597
+figure_07,Local CPU,Phi-4 Mini 3.8B (Q4),peak_ram_gib,13.455
+figure_07,GPU server,Apertus 70B (bf16),gpu_energy_j,5526.948
+figure_07,GPU server,Granite 4 H-Tiny (bf16),gpu_energy_j,1252.380
+figure_07,GPU server,Kimi Linear 48B-A3B (bf16),gpu_energy_j,1202.001
+figure_07,GPU server,Llama 3.2 1B (bf16),gpu_energy_j,207.658
+figure_07,GPU server,Llama 3.3 70B (FP8),gpu_energy_j,2874.863
+figure_07,GPU server,Ministral 3 14B,gpu_energy_j,1981.191
+figure_07,GPU server,Ministral 3 3B (AWQ),gpu_energy_j,394.998
+figure_07,GPU server,Ministral 3 8B (AWQ),gpu_energy_j,540.489
+figure_07,GPU server,Phi-4 14B (bf16),gpu_energy_j,1214.328
+figure_07,GPU server,Phi-4 Mini 3.8B (GPTQ-4),gpu_energy_j,523.208
+figure_07,GPU server,Phi-4 Mini 3.8B (bf16),gpu_energy_j,634.891
+figure_07,GPU server,Qwen 2.5 1.5B (bf16),gpu_energy_j,356.896
+figure_07,GPU server,Qwen 2.5 7B (AWQ),gpu_energy_j,407.148
+figure_07,GPU server,Qwen 3 30B-A3B (bf16),gpu_energy_j,1032.509
+figure_07,GPU server,Qwen 3 4B (AWQ),gpu_energy_j,450.712
+figure_05,Edge,Gemma 3 1B (Q8),reported_tokens_per_s:Dolly,6.496
+figure_05,Edge,Llama 3.2 1B (Q4),reported_tokens_per_s:Dolly,9.247
+figure_05,Edge,Phi-4 Mini 3.8B (Q4),reported_tokens_per_s:Dolly,3.259
+figure_05,Edge,SmolLM3 3B (Q4),reported_tokens_per_s:Dolly,4.061
+figure_05,Local CPU,Gemma 3 1B (Q8),reported_tokens_per_s:Dolly,15.617
+figure_05,Local CPU,Llama 3.2 1B (Q8),reported_tokens_per_s:Dolly,13.078
+figure_05,Local CPU,Ministral 3 3B (Q4),reported_tokens_per_s:Dolly,6.407
+figure_05,Local CPU,Phi-4 Mini 3.8B (Q4),reported_tokens_per_s:Dolly,7.695
+figure_05,GPU server,Apertus 70B (bf16),reported_tokens_per_s:Dolly,12.856
+figure_05,GPU server,Granite 4 H-Tiny (bf16),reported_tokens_per_s:Dolly,15.735
+figure_05,GPU server,Kimi Linear 48B-A3B (bf16),reported_tokens_per_s:Dolly,16.726
+figure_05,GPU server,Llama 3.2 1B (bf16),reported_tokens_per_s:Dolly,98.172
+figure_05,GPU server,Llama 3.3 70B (FP8),reported_tokens_per_s:Dolly,18.061
+figure_05,GPU server,Ministral 3 14B,reported_tokens_per_s:Dolly,11.543
+figure_05,GPU server,Ministral 3 3B (AWQ),reported_tokens_per_s:Dolly,45.628
+figure_05,GPU server,Ministral 3 8B (AWQ),reported_tokens_per_s:Dolly,36.326
+figure_05,GPU server,Phi-4 14B (bf16),reported_tokens_per_s:Dolly,51.247
+figure_05,GPU server,Phi-4 Mini 3.8B (GPTQ-4),reported_tokens_per_s:Dolly,39.818
+figure_05,GPU server,Phi-4 Mini 3.8B (bf16),reported_tokens_per_s:Dolly,41.577
+figure_05,GPU server,Qwen 2.5 1.5B (bf16),reported_tokens_per_s:Dolly,62.883
+figure_05,GPU server,Qwen 2.5 7B (AWQ),reported_tokens_per_s:Dolly,61.442
+figure_05,GPU server,Qwen 3 30B-A3B (bf16),reported_tokens_per_s:Dolly,19.317
+figure_05,GPU server,Qwen 3 4B (AWQ),reported_tokens_per_s:Dolly,45.417
+figure_05,Edge,Gemma 3 1B (Q8),reported_tokens_per_s:GSM8K,6.114
+figure_05,Edge,Llama 3.2 1B (Q4),reported_tokens_per_s:GSM8K,9.493
+figure_05,Edge,Phi-4 Mini 3.8B (Q4),reported_tokens_per_s:GSM8K,3.106
+figure_05,Edge,SmolLM3 3B (Q4),reported_tokens_per_s:GSM8K,4.033
+figure_05,Local CPU,Gemma 3 1B (Q8),reported_tokens_per_s:GSM8K,14.413
+figure_05,Local CPU,Llama 3.2 1B (Q8),reported_tokens_per_s:GSM8K,12.466
+figure_05,Local CPU,Ministral 3 3B (Q4),reported_tokens_per_s:GSM8K,5.757
+figure_05,Local CPU,Phi-4 Mini 3.8B (Q4),reported_tokens_per_s:GSM8K,7.440
+figure_05,GPU server,Apertus 70B (bf16),reported_tokens_per_s:GSM8K,11.674
+figure_05,GPU server,Granite 4 H-Tiny (bf16),reported_tokens_per_s:GSM8K,14.292
+figure_05,GPU server,Kimi Linear 48B-A3B (bf16),reported_tokens_per_s:GSM8K,14.971
+figure_05,GPU server,Llama 3.2 1B (bf16),reported_tokens_per_s:GSM8K,93.236
+figure_05,GPU server,Llama 3.3 70B (FP8),reported_tokens_per_s:GSM8K,20.135
+figure_05,GPU server,Ministral 3 14B,reported_tokens_per_s:GSM8K,10.493
+figure_05,GPU server,Ministral 3 3B (AWQ),reported_tokens_per_s:GSM8K,41.398
+figure_05,GPU server,Ministral 3 8B (AWQ),reported_tokens_per_s:GSM8K,34.729
+figure_05,GPU server,Phi-4 14B (bf16),reported_tokens_per_s:GSM8K,45.462
+figure_05,GPU server,Phi-4 Mini 3.8B (GPTQ-4),reported_tokens_per_s:GSM8K,37.504
+figure_05,GPU server,Phi-4 Mini 3.8B (bf16),reported_tokens_per_s:GSM8K,38.890
+figure_05,GPU server,Qwen 2.5 1.5B (bf16),reported_tokens_per_s:GSM8K,56.179
+figure_05,GPU server,Qwen 2.5 7B (AWQ),reported_tokens_per_s:GSM8K,53.372
+figure_05,GPU server,Qwen 3 30B-A3B (bf16),reported_tokens_per_s:GSM8K,16.027
+figure_05,GPU server,Qwen 3 4B (AWQ),reported_tokens_per_s:GSM8K,40.207
+figure_05,Edge,Gemma 3 1B (Q8),reported_tokens_per_s:HellaSwag,5.275
+figure_05,Edge,Llama 3.2 1B (Q4),reported_tokens_per_s:HellaSwag,12.359
+figure_05,Edge,Phi-4 Mini 3.8B (Q4),reported_tokens_per_s:HellaSwag,3.627
+figure_05,Edge,SmolLM3 3B (Q4),reported_tokens_per_s:HellaSwag,4.878
+figure_05,Local CPU,Gemma 3 1B (Q8),reported_tokens_per_s:HellaSwag,12.813
+figure_05,Local CPU,Llama 3.2 1B (Q8),reported_tokens_per_s:HellaSwag,18.017
+figure_05,Local CPU,Ministral 3 3B (Q4),reported_tokens_per_s:HellaSwag,8.210
+figure_05,Local CPU,Phi-4 Mini 3.8B (Q4),reported_tokens_per_s:HellaSwag,8.275
+figure_05,GPU server,Apertus 70B (bf16),reported_tokens_per_s:HellaSwag,2.179
+figure_05,GPU server,Granite 4 H-Tiny (bf16),reported_tokens_per_s:HellaSwag,2.726
+figure_05,GPU server,Kimi Linear 48B-A3B (bf16),reported_tokens_per_s:HellaSwag,4.322
+figure_05,GPU server,Llama 3.2 1B (bf16),reported_tokens_per_s:HellaSwag,2.844
+figure_05,GPU server,Llama 3.3 70B (FP8),reported_tokens_per_s:HellaSwag,2.406
+figure_05,GPU server,Ministral 3 14B,reported_tokens_per_s:HellaSwag,2.589
+figure_05,GPU server,Ministral 3 3B (AWQ),reported_tokens_per_s:HellaSwag,2.825
+figure_05,GPU server,Ministral 3 8B (AWQ),reported_tokens_per_s:HellaSwag,2.776
+figure_05,GPU server,Phi-4 14B (bf16),reported_tokens_per_s:HellaSwag,2.991
+figure_05,GPU server,Phi-4 Mini 3.8B (GPTQ-4),reported_tokens_per_s:HellaSwag,9.534
+figure_05,GPU server,Phi-4 Mini 3.8B (bf16),reported_tokens_per_s:HellaSwag,9.930
+figure_05,GPU server,Qwen 2.5 1.5B (bf16),reported_tokens_per_s:HellaSwag,2.795
+figure_05,GPU server,Qwen 2.5 7B (AWQ),reported_tokens_per_s:HellaSwag,2.793
+figure_05,GPU server,Qwen 3 30B-A3B (bf16),reported_tokens_per_s:HellaSwag,2.670
+figure_05,GPU server,Qwen 3 4B (AWQ),reported_tokens_per_s:HellaSwag,2.766
+figure_05,Edge,Gemma 3 1B (Q8),reported_tokens_per_s:MMLU,5.405
+figure_05,Edge,Llama 3.2 1B (Q4),reported_tokens_per_s:MMLU,12.697
+figure_05,Edge,Phi-4 Mini 3.8B (Q4),reported_tokens_per_s:MMLU,3.550
+figure_05,Edge,SmolLM3 3B (Q4),reported_tokens_per_s:MMLU,4.642
+figure_05,Local CPU,Gemma 3 1B (Q8),reported_tokens_per_s:MMLU,13.253
+figure_05,Local CPU,Llama 3.2 1B (Q8),reported_tokens_per_s:MMLU,18.139
+figure_05,Local CPU,Ministral 3 3B (Q4),reported_tokens_per_s:MMLU,8.348
+figure_05,Local CPU,Phi-4 Mini 3.8B (Q4),reported_tokens_per_s:MMLU,8.680
+figure_05,GPU server,Apertus 70B (bf16),reported_tokens_per_s:MMLU,2.270
+figure_05,GPU server,Granite 4 H-Tiny (bf16),reported_tokens_per_s:MMLU,2.685
+figure_05,GPU server,Kimi Linear 48B-A3B (bf16),reported_tokens_per_s:MMLU,4.818
+figure_05,GPU server,Llama 3.2 1B (bf16),reported_tokens_per_s:MMLU,2.862
+figure_05,GPU server,Llama 3.3 70B (FP8),reported_tokens_per_s:MMLU,2.469
+figure_05,GPU server,Ministral 3 14B,reported_tokens_per_s:MMLU,2.597
+figure_05,GPU server,Ministral 3 3B (AWQ),reported_tokens_per_s:MMLU,2.839
+figure_05,GPU server,Ministral 3 8B (AWQ),reported_tokens_per_s:MMLU,2.827
+figure_05,GPU server,Phi-4 14B (bf16),reported_tokens_per_s:MMLU,3.497
+figure_05,GPU server,Phi-4 Mini 3.8B (GPTQ-4),reported_tokens_per_s:MMLU,6.404
+figure_05,GPU server,Phi-4 Mini 3.8B (bf16),reported_tokens_per_s:MMLU,7.478
+figure_05,GPU server,Qwen 2.5 1.5B (bf16),reported_tokens_per_s:MMLU,2.895
+figure_05,GPU server,Qwen 2.5 7B (AWQ),reported_tokens_per_s:MMLU,2.803
+figure_05,GPU server,Qwen 3 30B-A3B (bf16),reported_tokens_per_s:MMLU,2.660
+figure_05,GPU server,Qwen 3 4B (AWQ),reported_tokens_per_s:MMLU,3.188

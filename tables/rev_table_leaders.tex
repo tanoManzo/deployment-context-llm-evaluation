@@ -1,0 +1,24 @@
+\begin{table}[!t]
+\revstart\centering
+\caption{Highest observed mean accuracy per context and benchmark, and the configurations that are not statistically distinguishable from it (Holm-adjusted two-proportion tests over the comparisons within each cell, $\alpha=0.05$, $n=100$).}
+\label{tab:leaders}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\columnwidth}{@{}l l L@{}}
+\toprule
+\textbf{Context} & \textbf{Bench.} & \textbf{Highest mean; not distinguishable from it} \\
+\midrule
+Edge & MMLU & \textbf{Phi-4 Mini 3.8B (Q4) (0.564)}; SmolLM3 3B (Q4) \\
+Edge & GSM8K & \textbf{Phi-4 Mini 3.8B (Q4) (0.639)}; SmolLM3 3B (Q4), Llama 3.2 1B (Q4), Gemma 3 1B (Q8) \\
+Edge & HellaSwag & \textbf{Phi-4 Mini 3.8B (Q4) (0.489)}; none \\
+\midrule
+Local CPU & MMLU & \textbf{Ministral 3 3B (Q4) (0.630)}; Phi-4 Mini 3.8B (Q4) \\
+Local CPU & GSM8K & \textbf{Phi-4 Mini 3.8B (Q4) (0.640)}; Ministral 3 3B (Q4) \\
+Local CPU & HellaSwag & \textbf{Phi-4 Mini 3.8B (Q4) (0.510)}; Ministral 3 3B (Q4) \\
+\midrule
+GPU server & MMLU & \textbf{Phi-4 14B (bf16) (0.820)}; Qwen 3 30B-A3B (bf16), Llama 3.3 70B (FP8), Qwen 3 4B (AWQ), Ministral 3 14B, Qwen 2.5 7B (AWQ), Ministral 3 8B (AWQ) \\
+GPU server & GSM8K & \textbf{Llama 3.3 70B (FP8) (0.745)}; Kimi Linear 48B-A3B (bf16), Granite 4 H-Tiny (bf16), Phi-4 Mini 3.8B (bf16), Phi-4 Mini 3.8B (GPTQ-4), Apertus 70B (bf16), Ministral 3 14B, Qwen 3 30B-A3B (bf16) \\
+GPU server & HellaSwag & \textbf{Phi-4 14B (bf16) (0.850)}; Llama 3.3 70B (FP8), Qwen 3 30B-A3B (bf16) \\
+\bottomrule
+\end{tabularx}
+\end{table}

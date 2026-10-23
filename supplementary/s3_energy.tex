@@ -1,0 +1,70 @@
+\begin{longtable}{@{}l l r r@{}}
+\caption{Mean GPU energy per request on the GPU server with 95\% bootstrap intervals over requests. Energy is the trapezoidal integral of the board power of the first GPU reported by \texttt{nvidia-smi} over the request; all models were served with tensor parallelism across both GPUs, so values cover one of the two GPUs.}\label{tab:s3}\\
+\toprule
+Configuration & Workload & Requests & Energy (J) \\
+\midrule\endfirsthead
+\toprule
+Configuration & Workload & Requests & Energy (J) \\
+\midrule\endhead
+\bottomrule\endfoot
+Apertus 70B (bf16) & MMLU & 100 & 103 [97, 108] \\
+Apertus 70B (bf16) & GSM8K & 100 & 5527 [5499, 5550] \\
+Apertus 70B (bf16) & HellaSwag & 100 & 92 [90, 93] \\
+Apertus 70B (bf16) & Dolly & 100 & 5603 [5591, 5617] \\
+Granite 4 H-Tiny (bf16) & MMLU & 200 & 33 [33, 34] \\
+Granite 4 H-Tiny (bf16) & GSM8K & 200 & 1252 [1228, 1274] \\
+Granite 4 H-Tiny (bf16) & HellaSwag & 200 & 34 [34, 35] \\
+Granite 4 H-Tiny (bf16) & Dolly & 100 & 1333 [1325, 1341] \\
+Kimi Linear 48B-A3B (bf16) & MMLU & 100 & 40 [40, 41] \\
+Kimi Linear 48B-A3B (bf16) & GSM8K & 100 & 1202 [1181, 1221] \\
+Kimi Linear 48B-A3B (bf16) & HellaSwag & 100 & 41 [41, 41] \\
+Kimi Linear 48B-A3B (bf16) & Dolly & 100 & 1184 [1168, 1197] \\
+Llama 3.2 1B (bf16) & MMLU & 100 & 23 [23, 24] \\
+Llama 3.2 1B (bf16) & GSM8K & 100 & 208 [203, 213] \\
+Llama 3.2 1B (bf16) & HellaSwag & 100 & 24 [23, 24] \\
+Llama 3.2 1B (bf16) & Dolly & 100 & 226 [225, 227] \\
+Llama 3.3 70B (FP8) & MMLU & 200 & 59 [58, 61] \\
+Llama 3.3 70B (FP8) & GSM8K & 200 & 2875 [2832, 2920] \\
+Llama 3.3 70B (FP8) & HellaSwag & 200 & 58 [57, 58] \\
+Llama 3.3 70B (FP8) & Dolly & 100 & 3183 [3153, 3199] \\
+Ministral 3 14B & MMLU & 100 & 35 [35, 36] \\
+Ministral 3 14B & GSM8K & 100 & 1981 [1974, 1989] \\
+Ministral 3 14B & HellaSwag & 100 & 35 [35, 36] \\
+Ministral 3 14B & Dolly & 100 & 2151 [2130, 2171] \\
+Ministral 3 3B (AWQ) & MMLU & 100 & 24 [24, 25] \\
+Ministral 3 3B (AWQ) & GSM8K & 100 & 395 [394, 396] \\
+Ministral 3 3B (AWQ) & HellaSwag & 100 & 25 [24, 25] \\
+Ministral 3 3B (AWQ) & Dolly & 100 & 390 [389, 392] \\
+Ministral 3 8B (AWQ) & MMLU & 100 & 27 [26, 27] \\
+Ministral 3 8B (AWQ) & GSM8K & 100 & 540 [537, 544] \\
+Ministral 3 8B (AWQ) & HellaSwag & 100 & 27 [27, 27] \\
+Ministral 3 8B (AWQ) & Dolly & 100 & 546 [544, 547] \\
+Phi-4 14B (bf16) & MMLU & 100 & 37 [37, 38] \\
+Phi-4 14B (bf16) & GSM8K & 100 & 1214 [1206, 1222] \\
+Phi-4 14B (bf16) & HellaSwag & 100 & 37 [36, 37] \\
+Phi-4 14B (bf16) & Dolly & 100 & 1209 [1199, 1216] \\
+Phi-4 Mini 3.8B (GPTQ-4) & MMLU & 100 & 26 [26, 26] \\
+Phi-4 Mini 3.8B (GPTQ-4) & GSM8K & 100 & 523 [515, 531] \\
+Phi-4 Mini 3.8B (GPTQ-4) & HellaSwag & 100 & 27 [27, 27] \\
+Phi-4 Mini 3.8B (GPTQ-4) & Dolly & 100 & 532 [522, 540] \\
+Phi-4 Mini 3.8B (bf16) & MMLU & 100 & 29 [28, 29] \\
+Phi-4 Mini 3.8B (bf16) & GSM8K & 100 & 635 [626, 643] \\
+Phi-4 Mini 3.8B (bf16) & HellaSwag & 100 & 28 [28, 28] \\
+Phi-4 Mini 3.8B (bf16) & Dolly & 100 & 659 [649, 668] \\
+Qwen 2.5 1.5B (bf16) & MMLU & 100 & 24 [24, 24] \\
+Qwen 2.5 1.5B (bf16) & GSM8K & 100 & 357 [356, 358] \\
+Qwen 2.5 1.5B (bf16) & HellaSwag & 100 & 24 [24, 24] \\
+Qwen 2.5 1.5B (bf16) & Dolly & 100 & 359 [353, 364] \\
+Qwen 2.5 7B (AWQ) & MMLU & 100 & 26 [26, 27] \\
+Qwen 2.5 7B (AWQ) & GSM8K & 100 & 407 [404, 410] \\
+Qwen 2.5 7B (AWQ) & HellaSwag & 100 & 26 [26, 27] \\
+Qwen 2.5 7B (AWQ) & Dolly & 100 & 405 [403, 407] \\
+Qwen 3 30B-A3B (bf16) & MMLU & 100 & 31 [30, 31] \\
+Qwen 3 30B-A3B (bf16) & GSM8K & 100 & 1033 [1026, 1039] \\
+Qwen 3 30B-A3B (bf16) & HellaSwag & 100 & 31 [31, 31] \\
+Qwen 3 30B-A3B (bf16) & Dolly & 100 & 1041 [1028, 1052] \\
+Qwen 3 4B (AWQ) & MMLU & 100 & 25 [25, 26] \\
+Qwen 3 4B (AWQ) & GSM8K & 100 & 451 [448, 453] \\
+Qwen 3 4B (AWQ) & HellaSwag & 100 & 26 [25, 26] \\
+Qwen 3 4B (AWQ) & Dolly & 100 & 447 [445, 449] \\
+\end{longtable}

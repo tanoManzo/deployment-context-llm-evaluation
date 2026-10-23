@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=1.6cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{url}
+
+\renewcommand{\thetable}{S\arabic{table}}
+\setlength{\LTcapwidth}{\textwidth}
+
+\title{Supplementary Material for\\[2pt]
+``Beyond Leaderboards: Deployment-Context-Aware Evaluation of\\ Small and Large Language Models''}
+\author{N. S. Stephane, G. Manzo, and P. Delgado}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent
+This document reports the uncertainty of the system-level measurements and the
+sensitivity analyses referred to in the article. All values are computed from the
+per-run result files of the benchmarking framework, available at
+\url{https://github.com/pameladelgado/TB-2026-SLM-benchmarking}, with the script
+\texttt{compute\_supplementary.py}; before computing intervals, the script
+reproduces every mean reported in the article from these files (maximum relative
+deviation 0.2\%). All measurements describe one sequential request stream.
+Output length is counted as whitespace-separated words of the generated text, as
+implemented by the framework.
+
+For some configurations, measurements were collected in more than one session
+(for example, after a re-run). As in the article, means pool the sessions of a
+configuration with equal weight; intervals for timing metrics are obtained with
+a two-stage cluster bootstrap (runs, then requests within runs; 2000 replicates)
+stratified by session.
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}
+\input{s1_timing.tex}
+\input{s2_rates.tex}
+\endgroup
+
+\begingroup\small
+\input{s3_energy.tex}
+\endgroup
+
+\begingroup\scriptsize\setlength{\tabcolsep}{4pt}
+\input{s4_accuracy_spread.tex}
+\input{s5_mcnemar.tex}
+\endgroup
+
+\end{document}
